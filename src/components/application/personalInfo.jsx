@@ -15,7 +15,7 @@ export default function StepTwo({ changeStepTwo }) {
         </div>
         <div className="imgIndicators">
           <p>Personal Information</p>
-          <img src={personalImg} />
+          <img alt="img" src={personalImg} />
         </div>
       </div>
       <div className="data">

@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../../scss/login.scss";
-import Footer from "../footer";
+// import Footer from "../footer";
 
 const Login = () => {
   return (

@@ -16,7 +16,7 @@ export default function Cv({ changeStepOne, changeStepTwo }) {
         </div>
         <div className="imgIndicators">
           <p>Upload your CV</p>
-          <img src={cvImg} />
+          <img alt="img" src={cvImg} />
         </div>
       </div>
       <div className="data">

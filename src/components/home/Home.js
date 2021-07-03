@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ImageC from "../../components/ImageC";
-import SignUpField from "../../components/SignUpFields";
+// import SignUpField from "../../components/SignUpFields";
 import Switch from "react-switch";
-import Footer from "../../components/footer.jsx";
+// import Footer from "../../components/footer.jsx";
 const Home = (props) => {
   const [checked, setChecked] = useState(false);
   const handleCheck = (checked) => {

@@ -13,7 +13,7 @@ export default function StepFour() {
         </div>
         <div className="imgIndicators">
           <p>Let us know about your skills</p>
-          <img src={skills} />
+          <img alt="img" src={skills} />
         </div>
       </div>
       <div className="data">

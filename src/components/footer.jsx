@@ -10,11 +10,11 @@ export default function Footer() {
       <div className="footerTop">
         <div className="address">
           <h6>Sourcing talents to germany</h6>
-          <img src={locationIcon} />
+          <img alt="img" src={locationIcon} />
           <span>Startup Incubator Berlin, Rohrdamm 88, 13629 Berlin</span>
           <br />
           <br />
-          <img src={emailIcon} />
+          <img alt="img" src={emailIcon} />
           <span>Startup Incubator Berlin, Rohrdamm 88, 13629 Berlin</span>
           <br />
           <br />
@@ -23,8 +23,8 @@ export default function Footer() {
             <br /> supported by European Union Social Fund and
             <br /> Berlin Senate
           </p>
-          <img src={fbIcon} />
-          <img src={linkedinIcon} />
+          <img alt="img" src={fbIcon} />
+          <img alt="img" src={linkedinIcon} />
         </div>
         <div className="footerLinks">
           <h6>Links</h6>
@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
         <div className="support">
           <h6>Supported by</h6>
-          <img src={supportIcon} />
+          <img alt="img" src={supportIcon} />
         </div>
       </div>
       <div className="footerBottom">© 2021 Moyyn. All rights reserved.</div>

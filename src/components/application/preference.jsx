@@ -16,7 +16,7 @@ export default function StepThree({ changeStepThree }) {
         </div>
         <div className="imgIndicators">
           <p>What are your preferences?</p>
-          <img src={preferenceImg} />
+          <img alt="img" src={preferenceImg} />
         </div>
       </div>
       <div className="data">
