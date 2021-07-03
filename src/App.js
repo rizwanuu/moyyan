@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Route, Switch, useLocation } from "react-router-dom";
+import NavBar from "./components/navBar";
+import Footer from "./components/footer";
+import Application from "./components/application/application";
+import Home from "./components/home/Home";
+import Login from "./components/home/Login";
+import "./App.scss";
+import { useState, useEffect } from "react";
 function App() {
+  const location = useLocation();
+  const [showFooter, setShowFooter] = useState(true);
+
+  useEffect(() => {
+    location.pathname.includes("/upload") ? setShowFooter(false) : setShowFooter(true);
+  }, [location])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      {/* <Application /> */}
+
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/upload" component={Application} />
+        <Route exact path="/login" component={Login} />
+      </Switch>
+      {showFooter && <Footer />}
+    </>
   );
 }
 
