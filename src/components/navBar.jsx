@@ -9,7 +9,7 @@ export default function NavBar() {
     <>
       <Navbar fixed="top" expand="lg">
         <Navbar.Brand href="/" className="icon">
-          <img alt="img" src={logo} alt="logo" />
+          <img src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

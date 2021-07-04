@@ -6,7 +6,6 @@ const ImageC = () => {
       <img
         alt="img"
         src={image}
-        alt="Error"
       />
     </>
   );
