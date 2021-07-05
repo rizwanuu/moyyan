@@ -88,6 +88,7 @@ const Preferences = () => {
           options={options}
           placeholder="Platform"
           color="black"
+          className = "selectInput"
           style={{
             height: "45px",
             width: "10rem",
@@ -99,6 +100,7 @@ const Preferences = () => {
           type="text"
           name="name"
           placeholder="Paste Url here"
+          className = "selectInput"
           style={{
             width: "18rem",
             padding:".5rem",
@@ -107,7 +109,7 @@ const Preferences = () => {
         />
         <div><button className="btnBoxx">Add</button></div>
       </div>
-      <div className="btnsP">
+      <div className="btnsPf">
         <button className="btnBoxPf">Back</button>
         <button className="btnBox2Pf">Next</button>
       </div>

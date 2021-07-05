@@ -90,6 +90,9 @@
     display: block;
   }
   .selectInput {
-    width: 100%;
+    width: 100% !important;
+  }
+  .date{
+    width: auto;
   }
 }

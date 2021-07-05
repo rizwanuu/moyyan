@@ -6,6 +6,7 @@ const ImageC = () => {
       <img
         alt="img"
         src={image}
+        style={{width: "15rem"}}
       />
     </>
   );

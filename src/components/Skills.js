@@ -110,8 +110,8 @@ const Skills = () => {
         />
       </div>
       <div className="btns">
-        <button className="btnBox">Back</button>
-        <button className="btnBox2">Next</button>
+        <button className="btnBoxP">Back</button>
+        <button className="btnBox2P">Next</button>
       </div>
     </div>
   );

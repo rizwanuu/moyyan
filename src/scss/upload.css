@@ -76,9 +76,9 @@
 }
 @media (max-width: 497px) {
   .btnBack {
-    padding: 5px 39px !important;
+    padding: 5px 30px !important;
   }
   .btnNext {
-    padding: 5px 39px !important;
+    padding: 5px 30px !important;
   }
 }

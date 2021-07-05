@@ -56,6 +56,7 @@ const PersonalInfo = () => {
           options={options}
           placeholder="City of Residence"
           color="black"
+          className="selectInput"
           style={{
             height: "55px",
             marginBottom: "1rem",
@@ -71,6 +72,7 @@ const PersonalInfo = () => {
           valueField={selectedOptions}
           placeholder="Visa Status"
           color="black"
+          className="selectInput"
           style={{
             height: "55px",
             marginTop: "1rem",
@@ -106,6 +108,7 @@ const PersonalInfo = () => {
           options={options}
           placeholder="Phone Number"
           color="black"
+          className="selectInput"
           style={{
             height: "55px",
             width: "calc(15ch + 200px)",
@@ -118,6 +121,7 @@ const PersonalInfo = () => {
           options={options}
           placeholder="Notice Periods (in months)"
           color="black"
+          className="selectInput"
           style={{
             height: "55px",
             width: "calc(15ch + 200px)",

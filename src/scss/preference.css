@@ -44,7 +44,7 @@
   background-color: transparent !important;
   color: #6eb6ff;
 }
-.btnsP {
+.btnsPf {
   display: flex;
   justify-content: space-around;
   margin-top: 5%;
@@ -80,10 +80,10 @@
 
 
 @media (max-width: 497px) {
-  .btnBoxP {
+  .btnBoxPf {
     padding: 5px 39px !important;
   }
-  .btnBox2P {
+  .btnBox2Pf {
     padding: 5px 39px !important;
   }
 }
@@ -91,7 +91,14 @@
   .straight{
     display: block;
   }
+  .selectInput{
+    width: 100%;
+  }
   .btnBoxx {
     margin-left: 0 !important;
+    width: 100%;
+  }
+  .rowPf{
+    display: block !important;
   }
 }

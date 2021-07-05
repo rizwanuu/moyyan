@@ -9,35 +9,63 @@ export default function Application() {
   const [stepThree, setStepThree] = useState(false);
   const [stepFour, setStepFour] = useState(false);
   const changeStepOne = () => {
-    setStepTwo(true);
-    setStepOne(false);
-    setStepThree(false);
-    setStepFour(false);
-  };
-  const changeStepTwo = () => {
-    setStepOne(false);
-    setStepTwo(false);
-    setStepThree(true);
-    setStepFour(false);
-  };
-  const changeStepThree = () => {
-    setStepOne(false);
-    setStepTwo(false);
-    setStepThree(false);
-    setStepFour(true);
-  };
-  const changeStepFour = () => {
     setStepOne(true);
     setStepTwo(false);
     setStepThree(false);
     setStepFour(false);
   };
+  const changeStepTwo = () => {
+    setStepOne(false);
+    setStepTwo(true);
+    setStepThree(false);
+    setStepFour(false);
+  };
+  const changeStepThree = () => {
+    setStepOne(false);
+    setStepTwo(false);
+    setStepThree(true);
+    setStepFour(false);
+  };
+  const changeStepFour = () => {
+    setStepOne(false);
+    setStepTwo(false);
+    setStepThree(false);
+    setStepFour(true);
+  };
   return (
     <div className="container">
-      {stepOne && <Cv changeStepOne={changeStepOne} />}
-      {stepTwo && <StepTwo changeStepTwo={changeStepTwo} />}
-      {stepThree && <StepThree changeStepThree={changeStepThree} />}
-      {stepFour && <StepFour changeStepFour={changeStepFour} />}
+      {stepOne && (
+        <Cv
+          changeStepOne={changeStepOne}
+          changeStepTwo={changeStepTwo}
+          changeStepThree={changeStepThree}
+          changeStepFour={changeStepFour}
+        />
+      )}
+      {stepTwo && (
+        <StepTwo
+          changeStepOne={changeStepOne}
+          changeStepTwo={changeStepTwo}
+          changeStepThree={changeStepThree}
+          changeStepFour={changeStepFour}
+        />
+      )}
+      {stepThree && (
+        <StepThree
+          changeStepOne={changeStepOne}
+          changeStepTwo={changeStepTwo}
+          changeStepThree={changeStepThree}
+          changeStepFour={changeStepFour}
+        />
+      )}
+      {stepFour && (
+        <StepFour
+          changeStepOne={changeStepOne}
+          changeStepTwo={changeStepTwo}
+          changeStepThree={changeStepThree}
+          changeStepFour={changeStepFour}
+        />
+      )}
     </div>
   );
 }

@@ -1,6 +1,7 @@
 .box {
   background-color: white;
   box-shadow: 0 0 12px 2px #c2c2c2;
+  width: 35rem;
 }
 .txt {
   margin-top: 2%;
@@ -51,14 +52,17 @@
 
 @media (max-width: 497px) {
   .btnBoxP {
-    padding: 5px 39px !important;
+    padding: 5px 30px !important;
   }
   .btnBox2P {
-    padding: 5px 39px !important;
+    padding: 5px 30px !important;
   }
 }
 @media (max-width: 992px) {
   .straight{
     display: block;
+  }
+  .box{
+    width: 100% !important;
   }
 }
